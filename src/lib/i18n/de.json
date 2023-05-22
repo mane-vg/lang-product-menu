@@ -1,0 +1,20 @@
+{
+  "overview": {
+    "tid": "",
+    "pid": "",
+    "name": "Produktübersicht",
+    "url": "/de/produkte",
+    "image": "",
+    "weight": "",
+    "children": []
+  },
+  "new": {
+    "tid": "",
+    "pid": "",
+    "name": "Produktneuheiten",
+    "url": "/de/produkte/produktneuheiten",
+    "image": "",
+    "weight": "",
+    "children": []
+  }
+}
