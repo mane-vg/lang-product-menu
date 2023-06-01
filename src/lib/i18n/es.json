@@ -16,5 +16,14 @@
     "image": "",
     "weight": "",
     "children": []
+  },
+  "all": {
+    "tid": "",
+    "pid": "",
+    "name": "Mostrar todo",
+    "url": "",
+    "image": "",
+    "weight": "",
+    "children": []
   }
 }

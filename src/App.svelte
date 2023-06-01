@@ -22,7 +22,9 @@
         return baseItems;
     }
     function buildSubtree(item) {
-        let children = menu.filter(_item => _item.pid === item.tid);
+        let children = menu.filter(_item => _item.pid === item.tid).sort((a, b) => {
+            return a.weight - b.weight;
+        });
         if(children) {
             children.forEach((_item) => {
                 _item.level = item.level + 1;
@@ -31,10 +33,6 @@
         }
 
         return children;
-    }
-
-    function printMenuSubtree() {
-
     }
 
     onMount(() => {
