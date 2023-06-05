@@ -1,29 +1,23 @@
 {
-  "overview": {
-    "tid": "",
-    "pid": "",
-    "name": "Product overview",
-    "url": "/en/products",
-    "image": "",
-    "weight": "",
-    "children": []
-  },
-  "new": {
-    "tid": "",
-    "pid": "",
-    "name": "New products",
-    "url": "/en/products/new-products",
-    "image": "",
-    "weight": "",
-    "children": []
-  },
-  "all": {
-    "tid": "",
-    "pid": "",
-    "name": "Show all",
-    "url": "",
-    "image": "",
-    "weight": "",
-    "children": []
-  }
+  "overview.tid": "",
+  "overview.pid": "",
+  "overview.name": "Product overview",
+  "overview.url": "/en/products",
+  "overview.image": "",
+  "overview.weight": "",
+  "overview.children": [],
+  "new.tid": "",
+  "new.pid": "",
+  "new.name": "New products",
+  "new.url": "/en/products/new-products",
+  "new.image": "",
+  "new.weight": "",
+  "new.children": [],
+  "all.tid": "",
+  "all.pid": "",
+  "all.name": "Show all",
+  "all.url": "",
+  "all.image": "",
+  "all.weight": "",
+  "all.children": []
 }

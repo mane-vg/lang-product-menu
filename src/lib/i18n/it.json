@@ -1,29 +1,24 @@
 {
-  "overview": {
-    "tid": "",
-    "pid": "",
-    "name": "Panoramica dei prodotti",
-    "url": "/it/prodotti",
-    "image": "",
-    "weight": "",
-    "children": []
-  },
-  "new": {
-    "tid": "",
-    "pid": "",
-    "name": "Novità sui prodotti",
-    "url": "/it/prodotti/novita-prodotti",
-    "image": "",
-    "weight": "",
-    "children": []
-  },
-  "all": {
-    "tid": "",
-    "pid": "",
-    "name": "Mostra tutti",
-    "url": "",
-    "image": "",
-    "weight": "",
-    "children": []
-  }
+  "overview.tid": "",
+  "overview.pid": "",
+  "overview.name": "Panoramica dei prodotti",
+  "overview.url": "/it/prodotti",
+  "overview.image": "",
+  "overviewImage": "",
+  "overview.weight": "",
+  "overview.children": [],
+  "new.tid": "",
+  "new.pid": "",
+  "new.name": "Novità sui prodotti",
+  "new.url": "/it/prodotti/novita-prodotti",
+  "new.image": "",
+  "new.weight": "",
+  "new.children": [],
+  "all.tid": "",
+  "all.pid": "",
+  "all.name": "Mostra tutti",
+  "all.url": "",
+  "all.image": "",
+  "all.weight": "",
+  "all.children": []
 }
