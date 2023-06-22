@@ -3,7 +3,7 @@
     import Menu from "./lib/components/Menu.svelte";
 
     //TODO: change to correct live URL
-    let baseUrl = 'https://shopnav-langwebsite.pantheonsite.io';
+    let baseUrl = window.location.origin;//'https://shopnav-langwebsite.pantheonsite.io';
     let restPath = '/rest/product-menu';
     let languagePathSegment = '/de';
     let format = '?_format=json';

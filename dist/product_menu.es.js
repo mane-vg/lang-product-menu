@@ -3859,33 +3859,33 @@ function Or(e) {
     }
   };
 }
-let Rr = "https://shopnav-langwebsite.pantheonsite.io", Ur = "/rest/product-menu", Gr = "?_format=json";
-function Dr(e, t, n) {
-  let r = "/de", i = [], s = [];
-  function o() {
-    let h = i.filter((a) => a.pid === "");
-    return h.forEach((a) => {
-      a.level = 2, a.children = u(a);
-    }), h;
-  }
-  function u(h) {
-    let a = i.filter((l) => l.pid === h.tid).sort((l, f) => l.weight - f.weight);
-    return a && a.forEach((l) => {
-      l.level = h.level + 1, l.children = u(l);
+let Rr = "/rest/product-menu", Ur = "?_format=json";
+function Gr(e, t, n) {
+  let r = window.location.origin, i = "/de", s = [], o = [];
+  function u() {
+    let a = s.filter((l) => l.pid === "");
+    return a.forEach((l) => {
+      l.level = 2, l.children = h(l);
     }), a;
   }
+  function h(a) {
+    let l = s.filter((f) => f.pid === a.tid).sort((f, c) => f.weight - c.weight);
+    return l && l.forEach((f) => {
+      f.level = a.level + 1, f.children = h(f);
+    }), l;
+  }
   return xt(() => {
-    r = "/" + document.querySelector("html").lang, fetch(Rr + Ur + r + Gr, { method: "GET" }).then((h) => h.json()).then((h) => {
-      i = h, n(0, s = o());
+    i = "/" + document.querySelector("html").lang, fetch(r + Rr + i + Ur, { method: "GET" }).then((a) => a.json()).then((a) => {
+      s = a, n(0, o = u());
     });
-  }), [s];
+  }), [o];
 }
-class Fr extends Xe {
+class Dr extends Xe {
   constructor(t) {
-    super(), Ve(this, t, Dr, Or, _e, {});
+    super(), Ve(this, t, Gr, Or, _e, {});
   }
 }
-const kr = {
+const Fr = {
   "overview.tid": "",
   "overview.pid": "",
   "overview.name": "Produktübersicht",
@@ -3907,7 +3907,7 @@ const kr = {
   "all.image": "",
   "all.weight": "",
   "all.children": []
-}, jr = {
+}, kr = {
   "overview.tid": "",
   "overview.pid": "",
   "overview.name": "Product overview",
@@ -3929,7 +3929,7 @@ const kr = {
   "all.image": "",
   "all.weight": "",
   "all.children": []
-}, $r = {
+}, jr = {
   "overview.tid": "",
   "overview.pid": "",
   "overview.name": "Aperçu des produits",
@@ -3951,7 +3951,7 @@ const kr = {
   "all.image": "",
   "all.weight": "",
   "all.children": []
-}, Vr = {
+}, $r = {
   "overview.tid": "",
   "overview.pid": "",
   "overview.name": "Resumen de productos",
@@ -3973,13 +3973,13 @@ const kr = {
   "all.image": "",
   "all.weight": "",
   "all.children": []
-}, Xr = "", zr = {
+}, Vr = "", Xr = {
   "overview.tid": "",
   "overview.pid": "",
   "overview.name": "Panoramica dei prodotti",
   "overview.url": "/it/prodotti",
   "overview.image": "",
-  overviewImage: Xr,
+  overviewImage: Vr,
   "overview.weight": "",
   "overview.children": [],
   "new.tid": "",
@@ -3997,14 +3997,14 @@ const kr = {
   "all.weight": "",
   "all.children": []
 };
-Q("de", kr);
-Q("en", jr);
-Q("fr", $r);
-Q("es", Vr);
-Q("it", zr);
-let Wr = document.getElementsByTagName("html")[0].getAttribute("lang");
+Q("de", Fr);
+Q("en", kr);
+Q("fr", jr);
+Q("es", $r);
+Q("it", Xr);
+let zr = document.getElementsByTagName("html")[0].getAttribute("lang");
 Er({
   fallbackLocale: "en",
-  initialLocale: Wr
+  initialLocale: zr
 });
-new an({ component: Fr, tagname: "product-menu" });
+new an({ component: Dr, tagname: "product-menu" });
