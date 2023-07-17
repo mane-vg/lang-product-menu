@@ -9,7 +9,7 @@
     export let all = false;
 
     //TODO: change to correct live URL
-    let baseUrl = window.location.origin;//'https://shopnav-langwebsite.pantheonsite.io';
+    let baseUrl = window.location.origin;
 </script>
 
 <li class="main-menu__item with-image main-menu__item--sub main-menu__item--sub-{level} sub-menu__item"

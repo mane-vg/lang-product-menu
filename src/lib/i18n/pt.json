@@ -1,0 +1,23 @@
+{
+  "overview.tid": "",
+  "overview.pid": "",
+  "overview.name": "Visão geral do produto",
+  "overview.url": "/pt-br/produtos",
+  "overview.image": "",
+  "overview.weight": "",
+  "overview.children": [],
+  "new.tid": "",
+  "new.pid": "",
+  "new.name": "Novos produtos",
+  "new.url": "/pt-br/produtos/novos-produtos",
+  "new.image": "",
+  "new.weight": "",
+  "new.children": [],
+  "all.tid": "",
+  "all.pid": "",
+  "all.name": "Mostrar tudo",
+  "all.url": "",
+  "all.image": "",
+  "all.weight": "",
+  "all.children": []
+}
